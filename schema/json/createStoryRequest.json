@@ -1,0 +1,37 @@
+{
+  "title": "createStoryRequest",
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "object",
+      "properties": {
+        "pocketToken": {
+          "type": "string"
+        },
+        "codeId": {
+          "type": "string"
+        },
+        "storyName": {
+          "type": "string"
+        },
+        "codes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "pocketToken",
+        "codeId",
+        "storyName",
+        "codes"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "body"
+  ]
+}

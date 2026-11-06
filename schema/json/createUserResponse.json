@@ -1,0 +1,21 @@
+{
+  "title": "createUserResponse",
+  "type": "object",
+  "properties": {
+    "pocketToken": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pocketToken",
+    "message",
+    "userId"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@codepocket/core-server",
+  "version": "0.0.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daangn/codepocket.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "re:build": "rescript"
+  },
+  "dependencies": {
+    "@codepocket/schema": "^0.0.4"
+  },
+  "devDependencies": {
+    "gentype": "^4.5.0",
+    "rescript": "^9.1.4",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.2.1"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "getStoryNamesResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "storyNames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "storyName": {
+            "type": "string"
+          },
+          "storyId": {
+            "type": "string"
+          },
+          "userId": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "storyName",
+          "storyId",
+          "userId"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "message",
+    "storyNames"
+  ]
+}

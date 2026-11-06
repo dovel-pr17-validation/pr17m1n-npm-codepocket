@@ -1,0 +1,22 @@
+{
+  "title": "getCodeNamesRequest",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "object",
+      "properties": {
+        "codeAuthor": {
+          "type": "string"
+        },
+        "codeName": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "query"
+  ]
+}

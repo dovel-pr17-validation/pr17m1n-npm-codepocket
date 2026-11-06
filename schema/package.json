@@ -1,0 +1,33 @@
+{
+  "name": "@codepocket/schema",
+  "version": "0.0.4",
+  "description": "",
+  "homepage": "https://github.com/daangn/codepocket#readme",
+  "bugs": {
+    "url": "https://github.com/daangn/codepocket/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daangn/codepocket.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "yarn compile && yarn tsc",
+    "compile": "yarn node -r tsm ./compile.ts"
+  },
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/prettier": "^2",
+    "json-schema-to-ts": "^2.5.5",
+    "tsm": "^2.2.2",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.2.1",
+  "publishConfig": {
+    "access": "public"
+  }
+}

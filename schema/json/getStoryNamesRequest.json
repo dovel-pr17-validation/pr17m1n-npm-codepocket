@@ -1,0 +1,22 @@
+{
+  "title": "GetStoryNamesRequest",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "object",
+      "properties": {
+        "codeId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "codeId"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "query"
+  ]
+}

@@ -1,0 +1,37 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: yarn
+        run: yarn
+
+      - name: set env var
+        run: |
+          echo "POCKET_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InFrcmRtc3RscjMiLCJzZXJ2ZXJVcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJpYXQiOjE2NjE2OTQxMjV9.mZxJhIEcjtr-weC3Dmqjq5IWAt49DTONBLf2s-wr8K4" >> $GITHUB_ENV
+          echo $POCKET_TOKEN
+
+      - name: test all
+        run: yarn test
+
+      - name: if fail
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{github.token}}
+          script: |
+            const ref = "${{github.ref}}"
+            const pull_number = Number(ref.split("/")[2])
+            await github.pulls.createReview({
+              ...context.repo,
+              pull_number,
+              body:"테스트 코드를 다시 확인해주세요",
+              event: "REQUEST_CHANGES"
+            })
+        if: failure()
