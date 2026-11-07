@@ -35,10 +35,10 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "@swc/core": "^1.2.211",
-    "@swc/jest": "^0.2.21",
+    "@swc/core": "^1.16.22",
+    "@swc/jest": "^0.2.39",
     "@types/dotenv-safe": "^8",
-    "@types/inquirer": "^9",
+    "@types/inquirer": "^9.0.10",
     "@types/jest": "^28.1.4",
     "@types/jsonwebtoken": "^8",
     "@types/node": "^18.0.3",
