@@ -1953,7 +1953,7 @@ __metadata:
     "@types/lodash": ^4
     "@types/react": ^18.0.14
     "@types/react-dom": ^18.0.6
-    "@types/react-syntax-highlighter": ^15
+    "@types/react-syntax-highlighter": ^15.5.13
     "@vanilla-extract/css": ^1.7.2
     "@vanilla-extract/recipes": ^0.2.5
     "@vanilla-extract/vite-plugin": ^3.2.1
@@ -6495,12 +6495,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:^15":
-  version: 15.5.3
-  resolution: "@types/react-syntax-highlighter@npm:15.5.3"
+"@types/react-syntax-highlighter@npm:^15.5.13":
+  version: 15.5.13
+  resolution: "@types/react-syntax-highlighter@npm:15.5.13"
   dependencies:
     "@types/react": "*"
-  checksum: 0aaf7af21634d6da7701e6b7381de12513cf523cc4359318049f2ece252156e10371fb2bcec2d6f532a4d2ded3c55e1cfb6ced7f4222689b53c2084dac64262a
+  checksum: 55f751c140eb6641b16a5644af3b6fc25223957141085758ae6898948e70eaca33d8276e86e75d5d60939aff63af1d20278aba0d3a25483266f9deee1eb468e3
   languageName: node
   linkType: hard
 
