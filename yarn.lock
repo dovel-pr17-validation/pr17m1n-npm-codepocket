@@ -1933,7 +1933,7 @@ __metadata:
     "@codesandbox/sandpack-react": ^1.2.4
     "@codesandbox/sandpack-themes": ^1.0.0
     "@mdx-js/react": ^1.6.22
-    "@seed-design/design-token": ^1.0.0-alpha.0
+    "@seed-design/design-token": ^1.0.5
     "@seed-design/stylesheet": ^1.0.0-beta.1
     "@storybook/addon-actions": ^6.5.9
     "@storybook/addon-docs": ^6.5.9
@@ -1953,8 +1953,8 @@ __metadata:
     "@types/lodash": ^4
     "@types/react": ^18.0.14
     "@types/react-dom": ^18.0.6
-    "@types/react-syntax-highlighter": ^15
-    "@vanilla-extract/css": ^1.7.2
+    "@types/react-syntax-highlighter": ^15.5.13
+    "@vanilla-extract/css": ^1.21.3
     "@vanilla-extract/recipes": ^0.2.5
     "@vanilla-extract/vite-plugin": ^3.2.1
     "@vitejs/plugin-react": ^1.3.0
@@ -1965,9 +1965,9 @@ __metadata:
     jest: ^28.1.3
     jest-environment-jsdom: ^28.1.3
     jotai: ^1.7.7
-    lodash: ^4.17.21
+    lodash: ^4.18.1
     msw: ^0.44.2
-    polished: ^4.2.2
+    polished: ^4.3.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-error-boundary: ^3.1.4
@@ -2196,6 +2196,13 @@ __metadata:
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
   checksum: 4b35d88a97e67275c1d990c96d3b0450451d089d1508619488fc0acb882cb1ac91e93246d471346ebd1b5402215941ef4162efe5b51534859b39d8b3a0e3ffaa
+  languageName: node
+  linkType: hard
+
+"@emotion/hash@npm:^0.9.0":
+  version: 0.9.2
+  resolution: "@emotion/hash@npm:0.9.2"
+  checksum: 379bde2830ccb0328c2617ec009642321c0e009a46aa383dfbe75b679c6aea977ca698c832d225a893901f29d7b3eef0e38cf341f560f6b2b56f1ff23c172387
   languageName: node
   linkType: hard
 
@@ -4358,10 +4365,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@seed-design/design-token@npm:^1.0.0-alpha.0":
-  version: 1.0.0-beta.4
-  resolution: "@seed-design/design-token@npm:1.0.0-beta.4"
-  checksum: 32c41e99c77e794b1ff3f04d7cf05c826c6b4bd3ed9818970f7b48b6108371ebe74f8113d19a515f28fb1d98b0dfe8bc8bf526c03e2f85cc6fc7c2cfe6378b21
+"@seed-design/design-token@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@seed-design/design-token@npm:1.0.5"
+  checksum: c098a9d4988a5b8833f03eae3910d5443e39b28b673d71c7c392807178b03d169ec007d2605de9c1fa4273e7737aa8714e66b24e9ec2f78e6f1d5ef34781a34f
   languageName: node
   linkType: hard
 
@@ -6495,12 +6502,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:^15":
-  version: 15.5.3
-  resolution: "@types/react-syntax-highlighter@npm:15.5.3"
+"@types/react-syntax-highlighter@npm:^15.5.13":
+  version: 15.5.13
+  resolution: "@types/react-syntax-highlighter@npm:15.5.13"
   dependencies:
     "@types/react": "*"
-  checksum: 0aaf7af21634d6da7701e6b7381de12513cf523cc4359318049f2ece252156e10371fb2bcec2d6f532a4d2ded3c55e1cfb6ced7f4222689b53c2084dac64262a
+  checksum: 55f751c140eb6641b16a5644af3b6fc25223957141085758ae6898948e70eaca33d8276e86e75d5d60939aff63af1d20278aba0d3a25483266f9deee1eb468e3
   languageName: node
   linkType: hard
 
@@ -6798,6 +6805,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.21.3":
+  version: 1.21.3
+  resolution: "@vanilla-extract/css@npm:1.21.3"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.9
+    css-what: ^6.1.0
+    csstype: ^3.2.3
+    dedent: ^1.5.3
+    deep-object-diff: ^1.1.9
+    deepmerge-ts: ^8.0.2
+    lru-cache: ^10.4.3
+    media-query-parser: ^2.0.2
+    modern-ahocorasick: ^3.3.0
+    picocolors: ^1.0.0
+  checksum: c4f4e8d2587b066af08423289d18ed2a866b2a3fb4e32d0627ee3cb3ae1222699412213151cd9db88cb089cc6d9cc2f5f74e94f64e15a3997b6ec11e62546e2e
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/css@npm:^1.7.2":
   version: 1.7.2
   resolution: "@vanilla-extract/css@npm:1.7.2"
@@ -6836,6 +6862,13 @@ __metadata:
   version: 1.0.3
   resolution: "@vanilla-extract/private@npm:1.0.3"
   checksum: 866a71ba6804edeb0735684e7723ba78f5cf0bb40d4fb538fe6bf7d73928099e341312337b2a510ac0ce96ff8a4b39eb7f7a5fad0c842532353dd20e7278f29b
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/private@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@vanilla-extract/private@npm:1.0.9"
+  checksum: 0f47b9faa9dc40c6cf7d2b48c16a6398b870c448db9276850449ecab1059ab10b354c67a574e0b2f6cb54054a20dfa42cf30f2f39e55dc4ab7c6cdc0ffbf7bbe
   languageName: node
   linkType: hard
 
@@ -10029,6 +10062,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-what@npm:^6.1.0":
+  version: 6.2.2
+  resolution: "css-what@npm:6.2.2"
+  checksum: 4d1f07b348a638e1f8b4c72804a1e93881f35e0f541256aec5ac0497c5855df7db7ab02da030de950d4813044f6d029a14ca657e0f92c3987e4b604246235b2b
+  languageName: node
+  linkType: hard
+
 "cssesc@npm:^3.0.0":
   version: 3.0.0
   resolution: "cssesc@npm:3.0.0"
@@ -10065,6 +10105,13 @@ __metadata:
   version: 3.1.0
   resolution: "csstype@npm:3.1.0"
   checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "csstype@npm:3.2.3"
+  checksum: cb882521b3398958a1ce6ca98c011aec0bde1c77ecaf8a1dd4db3b112a189939beae3b1308243b2fe50fc27eb3edeb0f73a5a4d91d928765dc6d5ecc7bda92ee
   languageName: node
   linkType: hard
 
@@ -10201,6 +10248,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dedent@npm:^1.5.3":
+  version: 1.7.2
+  resolution: "dedent@npm:1.7.2"
+  peerDependencies:
+    babel-plugin-macros: ^3.1.0
+  peerDependenciesMeta:
+    babel-plugin-macros:
+      optional: true
+  checksum: 58f46def0e0310f4c6298f648fa1b1f2de074879f9035ff08285279f91060bb9b3c83d9c918b3ef2be3e08705f8858dc9139d9931832d89788d6efd3021c535d
+  languageName: node
+  linkType: hard
+
 "deep-eql@npm:^3.0.1":
   version: 3.0.1
   resolution: "deep-eql@npm:3.0.1"
@@ -10221,6 +10280,20 @@ __metadata:
   version: 1.1.7
   resolution: "deep-object-diff@npm:1.1.7"
   checksum: 543fb1ae87b138ad260691e6949e72bf7dc144825084b7ad1886bb725d2ace1c19ed1ef1280f1116243e86bf2c6b942f45c670958b1468f644613f28c5dc97ea
+  languageName: node
+  linkType: hard
+
+"deep-object-diff@npm:^1.1.9":
+  version: 1.1.9
+  resolution: "deep-object-diff@npm:1.1.9"
+  checksum: ecd42455e4773f653595d28070295e7aaa8402db5f8ab21d0bec115a7cb4de5e207a5665514767da5f025c96597f1d3a0a4888aeb4dd49e03c996871a3aa05ef
+  languageName: node
+  linkType: hard
+
+"deepmerge-ts@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "deepmerge-ts@npm:8.0.2"
+  checksum: 4e696a821cb323e7d9cae89e44ca3c12deb855dfcd394860e2b1210199bf127f3f4cf04ea500ddc1b9eda10ea94123a290c333125d83ef38ad3f59fdc0237773
   languageName: node
   linkType: hard
 
@@ -16535,6 +16608,13 @@ eslint-config-airbnb-base@latest:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.18.1":
+  version: 4.18.1
+  resolution: "lodash@npm:4.18.1"
+  checksum: bb5f5b49aad29614e709af02b64c56b0f8b78c6a81434a3c1ae527d2f0f78ca08f9d9fb22aa825a053876c9d2166e9c01f31c356014b5e2bdc0556c057433102
+  languageName: node
+  linkType: hard
+
 "log-symbols@npm:^4.1.0":
   version: 4.1.0
   resolution: "log-symbols@npm:4.1.0"
@@ -16601,6 +16681,13 @@ eslint-config-airbnb-base@latest:
     fault: ^1.0.0
     highlight.js: ~10.7.0
   checksum: 14a1815d6bae202ddee313fc60f06d46e5235c02fa483a77950b401d85b4c1e12290145ccd17a716b07f9328bd5864aa2d402b6a819ff3be7c833d9748ff8ba7
+  languageName: node
+  linkType: hard
+
+"lru-cache@npm:^10.4.3":
+  version: 10.4.3
+  resolution: "lru-cache@npm:10.4.3"
+  checksum: 6476138d2125387a6d20f100608c2583d415a4f64a0fecf30c9e2dda976614f09cad4baa0842447bd37dd459a7bd27f57d9d8f8ce558805abd487c583f3d774a
   languageName: node
   linkType: hard
 
@@ -17317,6 +17404,13 @@ eslint-config-airbnb-base@latest:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
+  languageName: node
+  linkType: hard
+
+"modern-ahocorasick@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "modern-ahocorasick@npm:3.3.0"
+  checksum: 35c62c621b6ccceedb2ae420198a17a611c74c5adb43cae6942a93a5f9422713af1fdc87c0e15d065079838dfcbd67c1cf704eec2a3aac6bfd39b4d6e44bcb38
   languageName: node
   linkType: hard
 
@@ -19006,6 +19100,15 @@ eslint-config-airbnb-base@latest:
   dependencies:
     "@babel/runtime": ^7.17.8
   checksum: 97fb927dc55cd34aeb11b31ae2a3332463f114351c86e8aa6580d7755864a0120164fdc3770e6160c8b1775052f0eda14db9a6e34402cd4b08ab2d658a593725
+  languageName: node
+  linkType: hard
+
+"polished@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "polished@npm:4.3.1"
+  dependencies:
+    "@babel/runtime": ^7.17.8
+  checksum: a6f863c23f1d2f3f5cda3427b5885c9fb9e83b036d681e24820b143c7df40d2685bebb01c0939767120a28e1183671ae17c93db82ac30b3c20942180bb153bc7
   languageName: node
   linkType: hard
 
